@@ -35,25 +35,25 @@ Las bases de datos de la ENSANUT-ECU 2013-2011 se divide en  18 archivos,
 disponibles en el repositorio público de bases de datos del INEC (www.inec.gob.ec)
 y organizados de la siguiente manera:
 
-Nro.	ARCHIVO	DESCRIPCIÓN
-1	ensanut_f1_informacion_general.dta        Caratula - información general del hogar
-2	ensanut_f1_vivienda                       Formulario 1 : Secc. I: Datos de la vivienda y el hogar
-3	ensanut_f1_migracion_internacional.dta	   Formulario 1 : secc. ii: migración internacional
-4	ensanut_f1_personas.dta	                  Formulario 1 : secc. iii a ix: información de miembros de hogar
-5	ensanut_f1_mortalidad.dta                 Formulario 1 : secc. x: mortalidad en el hogar
-6	ensanut_f2_mef.dta	                     Formulario 2: mujeres en edad fértil de 12 a 49 años
-7	ensanut_f3_lactancia.dta	               Formulario 3: lactancia materna - menores de 3 años
-8	ensanut_f4_salud_ninez.dta	               Formulario 4: salud en la niñez - menores de 5 años
-9	ensanut_f5_fact_riesgo_ninos.dta	         Formulario 5: factores de riesgo - niños de 5 a menores de 10 años
-10	ensanut_f6_fact_riesgo_adolescentes.dta   Formulario 6: factores de riesgo - adolescentes de 10 menos de 20 años
-11	ensanut_f7_fact_riesgo_mayores.dta	      Formulario 7: factores de riesgo - hombres y mujeres de 10 a menos de 60 años
-12	ensanut_f8_actividad_fisica.dta	         Formulario 8: actividad física en el area urbana - personas de 18 a menos de 60 años
-13	ensanut_f9_salud_reproductiva	            Formulario 9: Salud reproductiva en los hombres de 12 a 49 años
-14	ensanut_f10_antropometria.dta	            Formulario 10: datos de antropometría
-15	ensanut_f11_consumo_partea.dta	         Formulario 11: partea - información sobre alimentación
-16	ensanut_f11_consumo_parteb.dta	         Formulario 11: parteb - detalle del consumo de alimentos
-17	ensanut_f11_consumo_parteb_vector.dta	   Formulario 11: parteb - detalle del consumo de alimentos formato vectores individuales
-18	ensanut_f12_bioquimica.dta	               Formulario 12: datos referenciales de bioquímica y flebotomía
+Nro. ARCHIVO                             DESCRIPCIÓN
+1 ensanut_f1_informacion_general.dta     Caratula - información general del hogar
+2 ensanut_f1_vivienda                    Formulario 1 : Secc. I: Datos de la vivienda y el hogar
+3 ensanut_f1_migracion_internacional.dta Formulario 1 : secc. ii: migración internacional
+4 ensanut_f1_personas.dta                Formulario 1 : secc. iii a ix: información de miembros de hogar
+5 ensanut_f1_mortalidad.dta              Formulario 1 : secc. x: mortalidad en el hogar
+6 ensanut_f2_mef.dta                     Formulario 2: mujeres en edad fértil de 12 a 49 años
+7 ensanut_f3_lactancia.dta               Formulario 3: lactancia materna - menores de 3 años
+8 ensanut_f4_salud_ninez.dta             Formulario 4: salud en la niñez - menores de 5 años
+9 ensanut_f5_fact_riesgo_ninos.dta       Formulario 5: factores de riesgo - niños de 5 a < 10 años
+10 ensanut_f6_fact_riesgo_adolescentes.dtFormulario 6: factores de riesgo - adolescentes de 10 a < 20 años
+11 ensanut_f7_fact_riesgo_mayores.dta    Formulario 7: factores de riesgo - hombres y mujeres de 10 a <60 años
+12 ensanut_f8_actividad_fisica.dta       Formulario 8: actividad física en el area urbana - personas de 18 a<60 años
+13 ensanut_f9_salud_reproductiva         Formulario 9: Salud reproductiva en los hombres de 12 a 49 años
+14 ensanut_f10_antropometria.dta         Formulario 10: datos de antropometría
+15 ensanut_f11_consumo_partea.dta        Formulario 11: partea - información sobre alimentación
+16 ensanut_f11_consumo_parteb.dta        Formulario 11: parteb - detalle del consumo de alimentos
+17 ensanut_f11_consumo_parteb_vector.dta Formulario 11: parteb - detalle del consumo de alimentos vectores
+18 ensanut_f12_bioquimica.dta            Formulario 12: datos referenciales de bioquímica y flebotomía
 
 SINTAXIS:
 
