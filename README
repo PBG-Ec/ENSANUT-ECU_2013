@@ -63,7 +63,7 @@ del INEC (www.inec.gob.ec), y mantenidos y actualizados en el repositorio digita
 https://github.com/PBG-Ec/ENSANUT-ECU_2013 . Contiene 9 archivos de sintaxis:
 
 Nro.	ARCHIVO	DESCRIPCIÓN
-1  ENS_F1_IDS_.do            Sintaxis general a variables de cruce, características de hogares y de la muestra
+1  ENS_F1_IDS_.do            Sintaxis general a variables de cruce,características gen.
 2  ENS_F3_Lact_.do           Sintaxis del capítulo de Lactancia Materna
 3  ENS_F5-7_FR_.do           Sintaxis del capítulo de Factores de Riesgos
 4  ENS__EnCro_.do            Sintaxis de Enfermedades Crónicas
