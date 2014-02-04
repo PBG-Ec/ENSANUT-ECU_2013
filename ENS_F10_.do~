@@ -258,10 +258,10 @@ igrowup_standard reflib datalib datalab gender agemons ageunit ///
 *En la base original añadir las variables generadas:
 use ensanut_f10_antropometria1.dta,clear
 local w ="`y'\ensanut_z_st.dta"
-cap merge 1:1 idpers using `w', keepusing(_*)
-cap drop _merge
+merge 1:1 idpers using `w', keepusing(_*)
+drop _merge
 *Rename Variable para la siguiente corrida 5 a 19 años
-cap renpfix _ _1
+renpfix _ _1
 
 ********************************************************************************
 *survey_who2007: 5 a 19  años
@@ -293,8 +293,8 @@ who2007 reflib datalib datalab sex agemons ageunit weight height oedema sw
 *En la base original añadir las variables generadas:
 use ensanut_f10_antropometria1.dta,clear
 local w ="`dy'\ensanut_z.dta"
-cap merge 1:1 idpers using `w', keepusing(_*)
-cap drop _merge
+merge 1:1 idpers using `w', keepusing(_*)
+drop _merge
 save ensanut_f10_antropometria1.dta,replace
 
 ********************************************************************************

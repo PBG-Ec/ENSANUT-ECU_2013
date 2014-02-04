@@ -282,7 +282,7 @@ tabout quint gr_etn gedad1 using 8.23.txt if gedad1<6 ///
 tabout quint gr_etn gedad1 using 8.23.txt if gedad1<6 ///
   & genero==2, append c(N an_boy ) sum lines(none) f(1) lay(row)
 
-*8.24 Anemia  MEF   por quitinl econ / grupo etnico
+*8.24 Anemia  MEF   por quitil econ / grupo etnico
 tabout quint gr_etn gedad1 using 8.24.txt if gedad1>6 & gedad1<12 ///
   & genero==2, replace c(mean an_boy ci) sum svy lines(none) f(3 3) lay(row)
 tabout quint gr_etn gedad1 using 8.24.txt if gedad1>6 & gedad1<12 ///
@@ -380,12 +380,19 @@ tabout  subreg zonas_pl  gedad1b using 8.32b.txt if gedad1b>6 & ///
   gedad1b<12 & genero==2, append  c(N idefvcm )  ///
   sum  lines(none) f(1) lay(row)
 
+*
+*
+*
+*
+*
+*
+*
+*
 *8.33b VCM en  MEF grupos de edad, por Quintil y etnia
-gen dmef=1 if gedad1b>6 & gedad1b<12 & genero==2
-tabout  quint gr_etn  dmef using 8.33b.txt if gedad1b>6 & ///
+tabout  quint gr_etn  gedad1b using 8.33b.txt if gedad1b>6 & ///
   gedad1b<12 & genero==2,replace  c(mean idefvcm ci ) ///
   sum svy  lines(none) f(3 3) lay(row)
-tabout  quint gr_etn  dmef using 8.33b.txt if gedad1b>6 & ///
+tabout  quint gr_etn  gedad1b using 8.33b.txt if gedad1b>6 & ///
   gedad1b<12 & genero==2, append  c(N idefvcm )  ///
   sum  lines(none) f(1) lay(row)
 
@@ -583,21 +590,25 @@ tabout idefpcr genero  gedad1b using 8.48.txt if gedad1b>=6 & gedad1b<=8, ///
   replace  c(mean zndef ci )  sum svy  lines(none) f(3 3) lay(row)
 tabout idefpcr genero  gedad1b using 8.48.txt if gedad1b>=6 & gedad1b<=8, ///
   append  c(N zndef )  sum  lines(none) f(1) lay(row)
-
+*
+*
+*
+*
+*
+*
 *8.48b Deficiencia de Zinc en  desglose  5 a 11 años, por PCR y genero
-recode zndef 1=1 2=0, gen(zndefa)
 tabout idefpcr genero edadanio using 8.48b.txt if edadanio>=5 & edadanio<=11, ///
-  replace  c(mean zndefa ci )  sum svy  lines(none) f(3 3) lay(row)
+  replace  c(mean zndef ci )  sum svy  lines(none) f(3 3) lay(row)
 tabout idefpcr genero edadanio using 8.48b.txt if edadanio>=5 & edadanio<=11, ///
-  append  c(N zndefa )  sum  lines(none) f(1) lay(row)
+  append  c(N zndef )  sum  lines(none) f(1) lay(row)
 
 
 *8.49 Deficiencia de Zinc en MEF por grupos de edad, por PCR y genero
-tabout idefpcr   dmef using 8.49.txt if gedad1b>6 & ///
-  gedad1b<12 & genero==2, replace  c(mean zndefa ci ) ///
+tabout idefpcr   gedad1b using 8.49.txt if gedad1b>6 & ///
+  gedad1b<12 & genero==2, replace  c(mean zndef ci ) ///
   sum svy  lines(none) f(3 3) lay(row)
-tabout idefpcr  dmef using 8.49.txt if gedad1b>6 & ///
-  gedad1b<12 & genero==2 ,append  c(N zndefa )  ///
+tabout idefpcr  gedad1b using 8.49.txt if gedad1b>6 & ///
+  gedad1b<12 & genero==2 ,append  c(N zndef )  ///
   sum  lines(none) f(1) lay(row)
 
 *8.50 Deficiencia de Zinc en  menores  de 5 años grupos de edad,
@@ -613,21 +624,26 @@ tabout subreg zonas_pl gedad1b using 8.51.txt if gedad1b>=6 & gedad1b<=8, ///
   replace  c(mean zndef ci )  sum svy  lines(none) f(3 3) lay(row)
 tabout subreg zonas_pl gedad1b using 8.51.txt if gedad1b>=6 & gedad1b<=8, ///
   append  c(N zndef )  sum  lines(none) f(1) lay(row)
-
+*
+*
+*
+*
+*
+*
+*
 *8.51b Deficiencia de Zinc poblacion desglose 5 a 11 años genero,
 *por subregion y zonas de plan
-gen d511=1 if edadanio>=5 & edadanio<=11
-tabout subreg zonas_pl d511 using 8.51b.txt if edadanio>=5 & edadanio<=11, ///
-  replace  c(mean zndefa ci )  sum svy  lines(none) f(3 3) lay(row)
-tabout subreg zonas_pl d511 using 8.51b.txt if edadanio>=5 & edadanio<=11, ///
-  append  c(N zndefa )  sum  lines(none) f(1) lay(row)
+tabout subreg zonas_pl edadanio using 8.51b.txt if edadanio>=5 & edadanio<=11, ///
+  replace  c(mean zndef ci )  sum svy  lines(none) f(3 3) lay(row)
+tabout subreg zonas_pl edadanio using 8.51b.txt if edadanio>=5 & edadanio<=11, ///
+  append  c(N zndef )  sum  lines(none) f(1) lay(row)
 
 
 *8.52 Deficiencia de Zinc en  MEF, por subregion y zonas de plan
-tabout  subreg zonas_pl  dmef using 8.52.txt if gedad1b>6 & ///
+tabout  subreg zonas_pl  gedad1b using 8.52.txt if gedad1b>6 & ///
   gedad1b<12 & genero==2,replace  c(mean zndef ci ) ///
   sum svy  lines(none) f(3 3) lay(row)
-tabout  subreg zonas_pl  dmef using 8.52.txt if gedad1b>6 & ///
+tabout  subreg zonas_pl  gedad1b using 8.52.txt if gedad1b>6 & ///
   gedad1b<12 & genero==2, append  c(N zndef )  ///
   sum  lines(none) f(1) lay(row)
 
@@ -643,12 +659,17 @@ tabout quint gr_etn gedad1b using 8.54.txt if gedad1b>=6 & gedad1b<=8, ///
   replace  c(mean zndef ci )  sum svy  lines(none) f(3 3) lay(row)
 tabout quint gr_etn gedad1b using 8.54.txt if gedad1b>=6 & gedad1b<=8, ///
   append  c(N zndef )  sum  lines(none) f(1) lay(row)
-
-*8.54b Deficiencia de Zinc en  5-11 años genero, por Quintil y grupo etnico
-tabout quint gr_etn d511 using 8.54b.txt if edadanio>=5 & edadanio<=11, ///
-  replace  c(mean zndefa ci )  sum svy  lines(none) f(3 3) lay(row)
-tabout quint gr_etn d511 using 8.54b.txt if edadanio>=5 & edadanio<=11, ///
-  append  c(N zndefa)  sum  lines(none) f(1) lay(row)
+*
+*
+*
+*
+*
+*
+*8.54b Deficiencia de Zinc en  5-19 años genero, por Quintil y grupo etnico
+tabout quint gr_etn edadanio using 8.54b.txt if edadanio>=5 & edadanio<=11, ///
+  replace  c(mean zndef ci )  sum svy  lines(none) f(3 3) lay(row)
+tabout quint gr_etn edadanio using 8.54b.txt if edadanio>=5 & edadanio<=11, ///
+  append  c(N zndef )  sum  lines(none) f(1) lay(row)
 
 *8.55 Deficiencia de Zinc en  MEF grupos de edad, por Quintil y grupo etnico
 tabout quint gr_etn gedad1b using 8.55.txt if gedad1b>6 & ///

@@ -6,6 +6,7 @@
 
 DESCRIPCIÓN DE LA INFORMACIÓN DISPONIBLE
 
+
 ADVERTENCIA
 
 Estas sintaxis estan bajo licencia GNU (General Public License), publicada
@@ -21,7 +22,12 @@ en  las manos del usuario.
  En ningún caso el Ministerio de Salud Pública del  Ecuador podrá ser considerado
 responsable de daño alguno causado por su utilización.
 
-UNA CITA RECOMENDABLE ES: 
+Se realiza un seguimiento y actualización de los códigos de análisis en
+el repositorio en línea: https://github.com/PBG-Ec/ENSANUT-ECU_2013
+contacto:  Philippe Belmont Guerron Mail: philippe.belmont@gmail.com
+
+
+A citation for this work is: 
 Freire, W.B., M-J. Ramirez, P. Belmont, M-J. Mendieta, P. Piñeiros, M.K. Silva,
 	N. Romero, K. Sáenz, P. Piñeiros, L.R. Gómez, R. Monge. Encuesta Nacional
 	de Salud y Nutrición del Ecuador ENSANUT-ECU TOMO I. Salud y Nutrición.
@@ -111,9 +117,5 @@ interpretable.
 
 Las bases de datos de Bioquímica y consumo por obvias razones operativas y
 técnicas de encuesta, cubren una submuestra de la mitad de la población meta.
-
-Se realiza un seguimiento y actualización de los códigos de análisis en
-el repositorio en línea: https://github.com/PBG-Ec/ENSANUT-ECU_2013
-contacto:  Philippe Belmont Guerron Mail: philippe.belmont@gmail.com
 
 Nota: Para antropometría, requiere instalar igrowup y antro+, paquetes de la OMS con la población de referencia.

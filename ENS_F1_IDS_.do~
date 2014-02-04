@@ -9,7 +9,7 @@ Coordinadora de la Investigacion ENSANUT 2011-2013: Wilma Freire.
 Investigadores y autores del informe: Wilma Freire
   Elaboración: Wilma Freire  freirewi@gmail.com
   Philippe Belmont Guerrón, MSP-ENSANUT  philippebelmont@gmail.com
-  Aprobación: Wilma Freire
+  Aprobación: Wilma Freireyyy
 
 Para citar esta sintaxis en una publicación usar:
 Freire, W.B., M-J. Ramirez, P. Belmont, M-J. Mendieta, P. Piñeiros, M.K. Silva,
@@ -123,6 +123,9 @@ cap gen exper=0
 replace exper=edadanio-escol-6 if escol>4
 replace exper=edadanio-10 if escol<=4
 replace exper=0 if exper<0
+
+*Edad
+cap gen edad=pd03
 
 **Variable de Grupo Etnico
 cap gen gr_etn= pd13
