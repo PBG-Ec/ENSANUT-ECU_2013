@@ -17,7 +17,7 @@ Freire, W.B., M-J. Ramirez, P. Belmont, M-J. Mendieta, P. Piñeiros, M.K. Silva,
 	de Salud y Nutrición del Ecuador ENSANUT-ECU TOMO I. Salud y Nutrición.
 	Quito, Ecuador: MSP / INEC, 2013.
 
-A BibTeX entry for LaTeX users is
+A BibTeX entry for LaTeX users is:
 
 @book{freire_encuesta_2013,
 	address = {Quito, Ecuador},
@@ -67,7 +67,7 @@ lab var idhog "Identificador de hogar"
 *Variables de cruce:
 merge m:1 idpers using ensanut_f1_personas.dta, ///
   keepusing(pd02 area gr_etn subreg zonas_planificacion ///
-  provincia quint edaddias edadanio)
+  provincia quint edaddiatets edadanio)
 drop if _merge==2
 drop _merge
 

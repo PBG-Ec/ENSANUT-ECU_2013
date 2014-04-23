@@ -16,7 +16,7 @@ Freire, W.B., M-J. Ramirez, P. Belmont, M-J. Mendieta, P. Piñeiros, M.K. Silva,
 	de Salud y Nutrición del Ecuador ENSANUT-ECU TOMO I. Salud y Nutrición.
 	Quito, Ecuador: MSP / INEC, 2013.
 
-A BibTeX entry for LaTeX users is
+A BibTeX entry for LaTeX users is:
 
 @book{freire_encuesta_2013,
 	address = {Quito, Ecuador},
@@ -41,7 +41,6 @@ cd ""
 **********CONSUMO USUAL Y ADECUACION DE MACRO Y MICRONUTRIENTES****************
 *********CONTRIBUCION PORCENTUAL DE LA DIETA PARA MACRONUTRIENTES**************
 *Preparación de bases:
-
 use ensanut_f11_consumo_parteb_vector.dta,clear
 *Variables de identificadores & svyset
 merge m:1 idpers using "ensanut_f1_personas.dta", ///

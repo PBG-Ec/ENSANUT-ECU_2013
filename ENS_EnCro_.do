@@ -18,7 +18,7 @@ Freire, W.B., M-J. Ramirez, P. Belmont, M-J. Mendieta, P. Piñeiros, M.K. Silva,
 	de Salud y Nutrición del Ecuador ENSANUT-ECU TOMO I. Salud y Nutrición.
 	Quito, Ecuador: MSP / INEC, 2013.
 
-A BibTeX entry for LaTeX users is
+A BibTeX entry for LaTeX users is:
 
 @book{freire_encuesta_2013,
 	address = {Quito, Ecuador},
@@ -52,6 +52,7 @@ foreach x of global bs{
 	gen double idhog=ciudad*10^9+zona*10^6+sector*10^3+vivienda*10+hogar
 	format idhog %20.0f
 	gen double idviv=ciudad*10^8+zona*10^5+sector*10^2+vivienda
+	gen double idviv=idsector*10^2+vivienda
 	format idviv %20.0f
 	lab var idhog "Identificador de hogar"
 	lab var idviv "Identificador de vivienda"
@@ -402,6 +403,7 @@ svy: tabulate gedadbiomarcadores sind_metab, ///
 *Quintil Económico
 svy: tabulate quint sind_metab, ///
   subpop(if (sind_metab!=. & cinturarisk!=.)) row se ci cv obs format(%17.4f)
+
 *Grupo Étnico
 svy: tabulate gr_etn sind_metab, ///
   subpop(if (sind_metab!=. & cinturarisk!=.)) row se ci cv obs format(%17.4f)

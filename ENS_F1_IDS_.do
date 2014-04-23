@@ -41,7 +41,7 @@ clear all
 set more off
 
 *Ingresar el directorio de las bases:
-*ej. cd "C:\Users\All Users\Desktop\ENSANUT"
+*ej. cd "C:\Users\Desktop\ENSANUT"
 cd "E:\stata\Bases"
 
 *Identificadores para las bases de personas y vivienda:
@@ -126,18 +126,10 @@ replace exper=0 if exper<0
 
 **Variable de Grupo Etnico
 cap gen gr_etn= pd13
-*indigena
 replace gr_etn=1 if pd13==1
-*Afro_ecuatoriano
-replace gr_etn=2 if pd13==2
-replace gr_etn=2 if pd13==3
-replace gr_etn=2 if pd13==4
-*montubio
+replace gr_etn=2 if (pd13==2 | pd13==3 | pd13==4)
 replace gr_etn=3 if pd13==5
-*blanco
-replace gr_etn=4 if pd13==6
-replace gr_etn=4 if pd13==8
-replace gr_etn=4 if pd13==7
+replace gr_etn=4 if (pd13==6 | pd13==7 | pd13==8)
 label define etn 1 "Indigena" 2 "Afroecuatoriano" 3 "Montubio" ///
   4 "Resto de la Poblacion", replace
 label values gr_etn etn
@@ -162,6 +154,7 @@ label values estado_civil eciv
 *Guayaquil, se incluyeron además de la división politico-administrativa
 *parroquial los sectores urbanizados (criterio: % de agua potable >45%) hasta
 *una distancia de 15 km de límite parroquial.
+
 cap gen provincia=int(ciudad/10000)
  replace provincia=26 if (ciudad==90150)
 replace provincia=26 if (idsector==90156002001|idsector==90650005002| ///
@@ -187,9 +180,10 @@ label define pro 1 "Azuay" 2 "Bolívar" 3 "Cañar" 4 "Carchi" 5 "Cotopaxi" ///
   6 "Chimborazo" 7 "El Oro" 8 "Esmeraldas" 9 "Guayas" 10 "Imbabura" 11 ///
   "Loja " 12 "Los Ríos" 13 "Manabí" 14 "Morona Santiago" 15 "Napo" 16 ///
   "Pastaza" 17 "Pichincha" 18 "Tungurahua" 19 "Zamora Chinchipe" 20 ///
-  "Galápagos" 21 "Sucumbíos" 22 "Orellana" 23 "Sto.Domingo de los Tsáchilas" ///
+  "Galápagos" 21 "Sucumbíos" 22 "Orellana" 23 "Sto Domingo de los Tsáchilas" ///
   24 "Santa Elena" 25 "Quito" 26 "Guayaquil", replace
 label values provincia pro
+
 
 *Variable de Region / Subregion
 *región= Sierra Urbana
