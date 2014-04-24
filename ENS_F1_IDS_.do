@@ -47,7 +47,6 @@ cd "E:\stata\Bases"
 *Identificadores para las bases de personas y vivienda:
 global bases ensanut_f1_informacion_general ensanut_f1_personas ///
   ensanut_f1_migracion_internacional ensanut_f1_mortalidad ensanut_f1_vivienda
-
 foreach x of global bases{
 	use `x', clear
 	cap drop id*
