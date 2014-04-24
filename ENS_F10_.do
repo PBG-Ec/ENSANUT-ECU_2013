@@ -38,6 +38,7 @@ A BibTeX entry for LaTeX users is:
 clear all
 set more off
 set maxvar 20000
+
 *Ingresar el directorio de las bases:
 cd ""
 global bases "ensanut_f10_antropometria ensanut_f2_mef"

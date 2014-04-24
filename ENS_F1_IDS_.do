@@ -39,7 +39,6 @@ A BibTeX entry for LaTeX users is:
 *Variables de identificadores
 clear all
 set more off
-
 *Ingresar el directorio de las bases:
 *ej. cd "C:\Users\Desktop\ENSANUT"
 cd "E:\stata\Bases"
