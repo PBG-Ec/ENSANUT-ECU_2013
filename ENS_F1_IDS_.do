@@ -41,7 +41,7 @@ clear all
 set more off
 *Ingresar el directorio de las bases:
 *ej. cd "C:\Users\Desktop\ENSANUT"
-cd "E:\stata\Bases"
+cd ""
 
 *Identificadores para las bases de personas y vivienda:
 global bases ensanut_f1_informacion_general ensanut_f1_personas ///
